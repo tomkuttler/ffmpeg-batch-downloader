@@ -78,21 +78,21 @@ The videos will be downloaded to the directory containing the script.
 
 ## Customization
 
-Change how URLs are filtered in extractURLs.sh: The script currently extracts only links that follow after ´HLSUrl":´. Modify the awk part of the script if your html source file is different. Here's a breakdown of the `awk` command as it is implemented at the moment:
+Change how URLs are filtered in extractURLs.sh: The script currently extracts only links that follow after `HLSUrl":`. Modify the awk part of the script if your html source file is different. Here's a breakdown of the `awk` command as it is implemented at the moment:
 
-´´´
+```
 awk -F'HLSUrl":' '{for (i=2; i<=NF; i++) print $i}' "$input_file" | awk -F'"' '{print $2}' | sort -u > "$output_file"
-´´´
+```
 
-- ´-F'HLSUrl":'´: This option sets the field separator to 'HLSUrl":'. It tells ´awk´ to split each line of input into fields based on the specified separator.
+- `-F'HLSUrl":'`: This option sets the field separator to 'HLSUrl":'. It tells `awk` to split each line of input into fields based on the specified separator.
 
-- ´'{for (i=2; i<=NF; i++) print $I}'´: This part of the ´awk´ command is a loop (´for´ loop) that iterates over the fields from the second field (´i=2´) to the last field (´i<=NF´). It prints each field on a new line. This effectively extracts the content that comes after "HLSUrl":.
+- `'{for (i=2; i<=NF; i++) print $I}'`: This part of the `awk` command is a loop (`for` loop) that iterates over the fields from the second field (`i=2`) to the last field (`i<=NF`). It prints each field on a new line. This effectively extracts the content that comes after "HLSUrl":.
 
-- ´awk -F'"' '{print $2}'´: This is a second ´awk´ command in the pipeline. It sets the field separator to double quotes (´-F'"'´) and prints the second field. This extracts the actual URL between the double quotes.
+- `awk -F'"' '{print $2}'`: This is a second `awk` command in the pipeline. It sets the field separator to double quotes (`-F'"'`) and prints the second field. This extracts the actual URL between the double quotes.
 
-- ´sort -u´: This command sorts the extracted URLs (´-u´ option ensures unique entries) in ascending order.
+- `sort -u`: This command sorts the extracted URLs (`-u` option ensures unique entries) in ascending order.
 
-- ´> "$output_file"´: Redirects the sorted and unique URLs to the specified output file.
+- `> "$output_file"`: Redirects the sorted and unique URLs to the specified output file.
 
 ---
 
