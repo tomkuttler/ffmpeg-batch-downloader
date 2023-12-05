@@ -13,7 +13,7 @@ The optional extractURLs.sh script extracts URLs from an html source file into a
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
     - [Extracting URLs](#extracting-urls)
-    - [Downloadind Videos](#downloading-videos)
+    - [Downloading Videos](#downloading-videos)
 - [Customization](#customization)
 - [License](#license)
 
@@ -25,7 +25,7 @@ The optional extractURLs.sh script extracts URLs from an html source file into a
 
 ### Extracting URLs
 
-This part is optional. If you already have the URLs of the videos you want to download, continue to Downloadind Videos.
+This part is optional. If you already have the URLs of the videos you want to download, continue to Downloading Videos.
 
 1. Clone or download the script to your local machine.
 2. Open a terminal and navigate to the directory containing the script.
@@ -51,7 +51,7 @@ output_file="/path/to/your/urls.txt"
 ```
 The links will be written to the urls.txt file.
 
-### Downloadind Videos
+### Downloading Videos
 
 1. Clone or download the script to your local machine.
 2. Open a terminal and navigate to the directory containing the script.
