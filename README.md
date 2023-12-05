@@ -2,9 +2,15 @@
 
 # ffmpeg-batch-downloader
 
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
 This Bash script automates the process of downloading multiple videos from specified URLs using FFmpeg. The script reads video URLs from a text file and downloads each video using FFmpeg.
 
 The optional extractURLs.sh script extracts URLs from an html source file into an output file.
+
+The two scripts work on macOS. They should also work on Linux (untested).
 
 </div>
 
