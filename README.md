@@ -2,9 +2,14 @@
 
 # ffmpeg-batch-downloader
 
-![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+<a href="https://www.gnu.org/software/bash/">
+    <img alt="Shell Script" src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" /></a>
+<a href="https://www.apple.com/macos/">
+    <img alt="macOS" src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /></a>
+<a href="https://kernel.org">
+    <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" /></a>
+<br>
+<br>
 
 This Bash script automates the process of downloading multiple videos from specified URLs using FFmpeg. The script reads video URLs from a text file and downloads each video using FFmpeg.
 
@@ -14,7 +19,8 @@ The two scripts work on macOS. They should also work on Linux (untested).
 
 </div>
 
-## Table of contents
+<details>
+<summary>Table of Contents</summary>
 
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
@@ -22,6 +28,7 @@ The two scripts work on macOS. They should also work on Linux (untested).
     - [Downloading Videos](#downloading-videos)
 - [Customization](#customization)
 - [License](#license)
+</details>
 
 ## Prerequisites
 
@@ -106,7 +113,4 @@ Output Naming in download.sh: The script currently extracts a portion of the URL
 
 ## License
 
-</a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-You are free to use, copy, modify, distribute, and display the work, as well as make derivative works based on it, as long as you give attribution to the original author and share any derivative works under the same license. For more information about the license, please see the `LICENSE.md` file.
-<div align="center">
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></div>
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute this software for both personal and commercial purposes as long as you give attribution to the original author. For more information about the license, please see the `LICENSE` file.
